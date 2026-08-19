@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F1F2EE;
+  color: #16202B;
+}
+
+.grid-bg {
+  --tw-grid-line: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(var(--tw-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--tw-grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
